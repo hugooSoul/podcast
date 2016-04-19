@@ -1,0 +1,93 @@
+<div id="podcast_show">
+  <div id="show_banner">
+    <div class="wrapper_skinny">
+      <h1><%= @podcast.title%></h1>
+      <p class="description">
+        <%= @podcast.description %>
+      </p>
+      <% unless @podcast.itunes.blank? %>
+        <a href="<%= @podcast.itunes%>" class="subscribe_link">iTunes</a>
+      <% end %>
+      <% unless @podcast.stitcher.blank? %>
+        <a href="<%= @podcast.stitcher%>" class="subscribe_link">Stiycher</a>
+      <% end %>
+      <% unless @podcast.podbay.blank? %>
+        <a href="<%= @podcast.podbay%>" class="subscribe_link">PodBay</a>
+      <% end %>
+    </div>
+  </div>
+
+  <div id="breadcrumb">
+    <%= link_to podcasts_path do %>
+      All podcast_shows
+      <span>/</span>
+      The Rocketship Podcast
+    <% end %>
+  </div>
+  <div id="episodes">
+    <div class="wrapper_skinny">
+      <ul class="cf">
+        <li class="cf">
+          <div class="episode_thumbnail">
+            <a href="episode.html">
+              <img src="images/post-1.png" alt="">
+            </a>
+          </div>
+          <div class="episode_overview">
+            <h2><a href="episode.html">How to Pull Off 12 (Well Executed) Startups in 12 Months</a></h2>
+            <p class="description">
+              Offal swag microdosing master cleanse. Gochujang squid selfies,
+              street art biodiesel direct trade portland crucifix ramps fanny pack
+              bitters humblebrag. Freegan kogi stumptown readymade butcher, fap
+              deep v cardigan offal church-key PBR&B microdosing forage vinyl YOLO.
+              Pinterest man braid listicle 8-bit distillery +1.
+            </p>
+          </div>
+        </li>
+
+        <li class="cf">
+          <div class="episode_thumbnail">
+            <a href="episode.html">
+              <img src="images/post-1.png" alt="">
+            </a>
+          </div>
+          <div class="episode_overview">
+            <h2><a href="episode.html">How to Pull Off 12 (Well Executed) Startups in 12 Months</a></h2>
+            <p class="description">
+              Offal swag microdosing master cleanse. Gochujang squid selfies,
+              street art biodiesel direct trade portland crucifix ramps fanny pack
+              bitters humblebrag. Freegan kogi stumptown readymade butcher, fap
+              deep v cardigan offal church-key PBR&B microdosing forage vinyl YOLO.
+              Pinterest man braid listicle 8-bit distillery +1.
+            </p>
+          </div>
+        </li>
+
+        <li class="cf">
+          <div class="episode_thumbnail">
+            <a href="episode.html">
+              <img src="images/post-1.png" alt="">
+            </a>
+          </div>
+          <div class="episode_overview">
+            <h2><a href="episode.html">How to Pull Off 12 (Well Executed) Startups in 12 Months</a></h2>
+            <p class="description">
+              Offal swag microdosing master cleanse. Gochujang squid selfies,
+              street art biodiesel direct trade portland crucifix ramps fanny pack
+              bitters humblebrag. Freegan kogi stumptown readymade butcher, fap
+              deep v cardigan offal church-key PBR&B microdosing forage vinyl YOLO.
+              Pinterest man braid listicle 8-bit distillery +1.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="pagination">
+  <span class="previous_page disabled">Previous</span>
+  <em class="current">1</em>
+  <a href="#">2</a>
+  <a href="#" class="next_page">Next</a>
+</div>
